@@ -143,7 +143,7 @@ h1, h2, h3, p{
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-	transition: color var(--transition-duration) var(--transition-timing-function), text-shadow var(--transition-duration) var(--transition-timing-function) 250ms;
+	transition: color var(--transition-duration) var(--transition-timing-function), text-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .auth-nav .link:hover{
@@ -395,7 +395,7 @@ img{
 	height: 44px;
 	border-radius: 50%;
 
-	transition: background-color var(--transition-duration) var(--transition-timing-function), 
+	transition: background-color var(--transition-duration) var(--transition-timing-function); 
 }
 
 .net-link:hover, .net-link:focus{
@@ -475,7 +475,11 @@ img{
 	margin-bottom: 20px;
 }
 
-.link.address:hover{
+.link.address{
+	transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.link.address:hover, .link.address:focus{
 	color: var(--accent-color);
 }
 	
@@ -485,6 +489,7 @@ img{
 
 .contacts{
     color: var(--other-text-color);
+	transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .contacts:hover, .contacts:focus{
 	color: var(--accent-color);
